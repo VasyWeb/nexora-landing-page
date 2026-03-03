@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora — Build Something Great</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Nexora</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-btn">Get Started</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+      <a
+        href="#contact"
+        onclick="closeMenu()"
+        style="color: var(--accent); font-weight: 600"
+        >Get Started →</a
+      >
+    </div>
+    <section id="home">
+      <div class="glow-1"></div>
+      <div class="glow-2"></div>
+      <div class="hero-badge">
+        <div class="dot-pulse"></div>
+        Now Available Worldwide
+      </div>
+      <h1>
+        We Build <span class="gradient-text">Digital Products</span> That Matter
+      </h1>
+      <p class="hero-sub">
+        Nexora helps ambitious businesses craft modern digital experiences —
+        from strategy and design to development and growth.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Start a Project</a>
+        <a href="#about" class="btn-ghost">Learn More →</a>
+      </div>
+      <div class="trust-row">
+        <p class="trust-label">Trusted by teams at</p>
+        <div class="trust-logos">
+          <span>Stripe</span><span>Notion</span><span>Linear</span
+          ><span>Vercel</span><span>Figma</span>
+        </div>
+      </div>
+    </section>
+    <div class="stats-bar reveal">
+      <div class="stat-item">
+        <div class="stat-val">200+</div>
+        <div class="stat-desc">Projects Delivered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">98%</div>
+        <div class="stat-desc">Client Satisfaction</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">6yrs</div>
+        <div class="stat-desc">In the Industry</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">40+</div>
+        <div class="stat-desc">Expert Team Members</div>
+      </div>
+    </div>
+    <section id="about">
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p class="section-eyebrow">About Us</p>
+          <h2 class="section-title">
+            We Turn Ideas Into
+            <span class="gradient-text">Exceptional</span> Products
+          </h2>
+          <p>
+            Nexora is a digital product studio working with startups, scale-ups,
+            and enterprise teams. We combine strategy, design, and engineering
+            to build products that drive real results.
+          </p>
+          <p>
+            Our team of 40+ experts has helped companies raise funding, launch
+            products, and scale their businesses across 25+ countries.
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">⚡</div>
+              <div>
+                <div class="feature-title">Fast Delivery</div>
+                <div class="feature-desc">
+                  We move quickly without sacrificing quality. Most projects
+                  ship in 4–8 weeks.
+                </div>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🎯</div>
+              <div>
+                <div class="feature-title">Results Focused</div>
+                <div class="feature-desc">
+                  Every decision is tied to measurable business outcomes, not
+                  just aesthetics.
+                </div>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🔒</div>
+              <div>
+                <div class="feature-title">Reliable & Secure</div>
+                <div class="feature-desc">
+                  Enterprise-grade security and transparent communication
+                  throughout.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card-main">
+            <div class="card-number">6+</div>
+            <div class="card-label">Years of Excellence</div>
+            <div class="card-sub">
+              Building digital products that stand the test of time and drive
+              sustainable business growth.
+            </div>
+            <div class="mini-cards">
+              <div class="mini-card">
+                <div class="mini-card-val">200+</div>
+                <div class="mini-card-label">Projects</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-card-val">40+</div>
+                <div class="mini-card-label">Experts</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-card-val">25+</div>
+                <div class="mini-card-label">Countries</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-card-val">98%</div>
+                <div class="mini-card-label">Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-inner reveal">
+        <div class="contact-info">
+          <p class="section-eyebrow">Contact</p>
+          <h2 class="section-title">
+            Let's Work <span class="gradient-text">Together</span>
+          </h2>
+          <p>
+            Have a project in mind? We'd love to hear about it. Send us a
+            message and we'll get back to you within 24 hours.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <div class="contact-item-title">Email</div>
+                <div class="contact-item-val">hello@nexora.io</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-item-title">Location</div>
+                <div class="contact-item-val">San Francisco, CA</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">⏰</div>
+              <div>
+                <div class="contact-item-title">Response Time</div>
+                <div class="contact-item-val">Within 24 hours</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="form-title">Send a Message</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label><input type="text" placeholder="John" />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label><input type="text" placeholder="Doe" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label
+            ><input type="email" placeholder="john@company.com" />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select>
+              <option value="">Select a topic...</option>
+              <option>New Project</option>
+              <option>Partnership</option>
+              <option>General Inquiry</option>
+              <option>Support</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label
+            ><textarea placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button class="form-submit" onclick="handleSubmit(this)">
+            Send Message →
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="logo">Nexora</div>
+      <p>© 2026 Nexora. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
